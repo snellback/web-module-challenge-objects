@@ -119,12 +119,11 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
+function getReviewByIndex(arr, indexNum) {
+  return `${arr[indexNum].name} gave the restaurant a ${arr[indexNum].rating} star review, and their feedback was: ${arr[indexNum].feedback}`;
 }
 
-
-  
+console.log(getReviewByIndex(reviews, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Write a function to get information about the most recent (last) review called `getLastReview`
@@ -138,11 +137,12 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
+function getLastReview(arr) {
+
+  return `${arr[arr.length - 1].name} gave the restaurant a ${arr[arr.length - 1].rating} star review, and their feedback was: ${arr[arr.length - 1].feedback}`;
 } 
 
-
+console.log(getLastReview(reviews));
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
